@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <title>CV Paul</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	  <link href="CVPaul.css" rel="stylesheet" type="text/css"/>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	  <script src="CVPaul.js"></script>
+	</head>
+	
+	<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+		
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="#myCarousel">ACCEUIL</a></li>
+				<li><a href="#presentation">PRESENTATION</a></li>
+				<li><a href="#compétences">COMPETENCES</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+				<li><a href="#hobbies">HOBBIES</a></li>
+			  </ul>
+			</div>
+		</nav>
+		
+		<header id="myCarousel" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+			<div class="item active">
+			  <img src="img\Profil.jpg" alt="profil" style="width:100%;height:100%;">
+			  <div class="carousel-caption">
+				<h3>Paul Chasseloup</h3>
+				<p>Etudiant en école d'ingénieur</p>
+			  </div>
+			</div>
+
+			<div class="item">
+			  <img src="img\kite.jpg" alt="kite" style="width:100%;height:100%;">
+			  <div class="carousel-caption">
+				<h3>Passionné</h3>
+				<p>par les sports nautiques notament le kitesurf</p>
+			  </div>
+			</div>
+
+			<div class="item">
+			  <img src="img\kendo.jpg" alt="kendo" style="width:100%;height:100%;">
+			  <div class="carousel-caption">
+				<h3>Arts matiaux</h3>
+				<p>Pratiquant de kendo depuis 10 ans</p>
+			  </div>
+			</div>
+			
+			<div class="item">
+			  <img src="img\informatique.jpeg" alt="informatique" style="width:100%;height:100%;">
+			  <div class="carousel-caption">
+				<h3>Compétences</h3>
+				<p>En informatique et en électronique</p>
+			  </div>
+			</div>
+		  </div>
+
+		  <!-- Left and right controls -->
+		  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		  </a>
+		</header>
+		
+		<div id="presentation" class="container" class="container text-center">
+		  <h3>Présentation rapide</h3><br>
+		  <p>Créatif et curieux par nature, j‘essaie constamment d‘innover et de voir les choses sous un angle nouveau. J‘ai fait de nombreux projets en équipe durant ma formation, ce qui me rend aujourd‘hui aussi performant par moi même qu‘en groupe.
+Je suis également passionné par les arts martiaux, la musique et les sports nautiques.</p>
+		</div>
+		
+		<video width="1280" height="720" controls class="container">
+		  <source src="img\kite.mp4" type="video/mp4">
+		  <source src="img\kite.ogg" type="video/ogg">
+		  Your browser does not support the video tag.
+		</video>
+		
+		<div id="contact" class="container" style="background-color: lightgray">
+		  <h3 class="text-center">Contactez moi !</h3>
+		  <p class="text-center"><em>n'hesitez pas a remplir ce formulaire</em></p>
+		  <form class="row test">
+			<div class="col-md-4" style="text-align: left;">
+			  <p>Voici mes coordonnées</p>
+			  <p><span class="glyphicon glyphicon-map-marker"></span>  Yvelines, France</p>
+			  <p><span class="glyphicon glyphicon-phone"></span>  Tel: +33 601643105</p>
+			  <p><span class="glyphicon glyphicon-envelope"></span>  paul.chasseloup@gmail.com</p>
+			</div>
+			<div class="col-md-8">
+			  <div class="row">
+				<div class="col-sm-6 form-group">
+				  <input class="form-control" id="name" name="name" placeholder="Nom" type="text" required>
+				</div>
+				<div class="col-sm-6 form-group">
+				  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+				</div>
+			  </div>
+			  <textarea class="form-control" id="comments" name="comments" placeholder="Commentaire" rows="5"></textarea>
+			  <div class="row">
+				<div class="col-md-12 form-group">
+				  <br>
+				  <button class="btn pull-right" type="submit" action="onclick>Envoyer !</button>
+				</div>
+			  </div>
+			</div>
+		  </form>
+		</div>
+
+	</body>
+	
+	<footer class="text-center">
+	  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="Retour a l'acceuil">
+		<span class="glyphicon glyphicon-chevron-up"></span>
+	  </a><br><br>
+	  <p>CV web de Paul Chasseloup</p>
+	</footer>
+	
+</html>
